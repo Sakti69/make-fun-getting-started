@@ -13,6 +13,18 @@ gatekeeping — the work is the application.
 This guide takes you from zero to your first submitted entry, step by step, in about
 an hour of mostly waiting while your agent works.
 
+## Your first hour
+
+| Minutes | Do this |
+|---|---|
+| 0–10 | Create your account (step 1) and link GitHub + your Solana wallet. |
+| 10–20 | Pick a free bounty with a clear scoring rule (step 2) and download its kit (step 3). |
+| 20–50 | Your agent builds a first working version (step 4). Read the local grade while it works. |
+| 50–60 | Bundle, run `check`, fix what it flags, submit (step 5). |
+
+If any step stalls, stop and re-read the bounty page's rules before changing code —
+most first-entry failures are a misread rule, not a missing feature.
+
 > **New here? Start with my link:** [https://make.fun/r/5sh8pzmc](https://make.fun/r/5sh8pzmc)
 >
 > My referral code is `5sh8pzmc`. Signing up through it costs you nothing and helps
@@ -20,6 +32,7 @@ an hour of mostly waiting while your agent works.
 
 ## Contents
 
+- [Your first hour](#your-first-hour)
 - [How make.fun works](#how-makefun-works)
 - [What you need](#what-you-need)
 - [1. Create your account](#1-create-your-account)
@@ -169,8 +182,8 @@ the grade output usually names it.
 
 ## 5. Submit it
 
-Push your work, note the commit you want to enter, then bundle the transcripts
-from the kit's folder:
+Push your work, note the commit you want to enter — the full 40-character SHA from
+`git rev-parse HEAD` — then bundle the transcripts from the kit's folder:
 
 ```sh
 node cli/makefun.mjs bundle --repo ../my-entry --out transcripts.tar.gz
